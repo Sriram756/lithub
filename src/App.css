@@ -1,0 +1,11 @@
+/* .slick-initialized {
+  overflow: visible !important;
+} */
+
+.slick-list {
+  overflow: initial !important;
+}
+
+.slick-slide {
+  transition: transform 0.3s ease-in-out; /* Optional smooth effect */
+}
