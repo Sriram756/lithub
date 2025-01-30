@@ -13,7 +13,7 @@ const Login = () => {
               className="mb-3  max-w-[400px] w-full min-h-1 block"
             />
             <Link
-              href="/signin"
+              to="/signin"
               className="font-bold mb-3  bottom-[-10px] bg-blue-500 hover:bg-blue-800 cursor-pointer p-4 -tracking-wider text-lg rounded-md w-full"
             >
               GET ALL THERE
