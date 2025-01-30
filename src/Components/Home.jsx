@@ -4,7 +4,7 @@ import Viewer from "./Viewer";
 import Recommends from "./Recommends";
 import Originals from "./Originals";
 import Trending from "./Trending";
-import Upcoming from "./upcoming";
+import Upcoming from "./Upcoming";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setMovies } from "../feature/Movie/movieSlice";
