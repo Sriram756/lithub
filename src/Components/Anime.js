@@ -19,7 +19,7 @@ export const useAnime = () => {
       .then((response) => response.json())
       .then((data) => {
         setAnimeData(data.data || []);
-        console.log("ani",data.data);
+        
       })
       .catch((err) => console.log("fetching anime", err))
   }, []);

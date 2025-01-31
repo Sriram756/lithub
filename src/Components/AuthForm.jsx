@@ -32,7 +32,6 @@ function AuthForm({ isSignUp }) {
       .then((result) => {
         const user = result.user; // Get the user object from the result
         setUser(user); // Pass the user object to setUser
-        console.log(user);
       })
       .catch((error) => {
         alert(error.message);
@@ -69,7 +68,6 @@ function AuthForm({ isSignUp }) {
         email: email,
       })
     );
-    console.log(email);
   };
 
   return (

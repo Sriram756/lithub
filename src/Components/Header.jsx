@@ -40,7 +40,7 @@ const Header = (props) => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-black flex justify-between items-center px-5 z-50 h-[80px] pointer-events-auto">
+    <div className="fixed top-0 left-0 right-0 bg-black flex justify-between items-center px-1 md:px-5 z-50 h-[80px] pointer-events-auto">
       <img
         src="Images/Lit_Hub.png"
         alt="Lit Hub Logo"
@@ -51,14 +51,14 @@ const Header = (props) => {
         <div className="md:flex flex-row  flex-nowrap m-0 p-0 mr-auto ">
           <Link
             to="/subscribe"
-            className="bg-orange-600 ml-6 flex flex-row rounded-md pb-1 px-2"
+            className="bg-orange-600 ml-0  flex flex-row items-center rounded-md pb-1 px-2"
           >
             <img
               src="/Images/icons8-star-48.png"
               alt="Home Icon"
-              className="h-8 "
+              className="h-4  md:h-8"
             />{" "}
-            <h2 className="text-2xl text-center">subscribe</h2>
+            <h2 className="md:text-2xl text-sm text-center">subscribe</h2>
           </Link>
           <a
             href="/home"
@@ -84,14 +84,14 @@ const Header = (props) => {
             <h2 className="text-center">watchlist</h2>
           </a>
         </div>
-        <div className="relative  flex flex-row gap-3 justify-center items-center">
+        <div className="relative  flex flex-row md:gap-3 gap-1 justify-center items-center">
           <img
             src={userPhoto}
             alt="profile"
-            className="rounded-3xl w-[50px] h-[50px]"
+            className="rounded-3xl md:w-[50px] md:h-[50px] h-[25px] w-[25px]"
           />
           <button
-            className="text-black hover:text-white  bg-red-500 rounded-md  duration-200  pointer-events-auto border-red-50 p-2  "
+            className="text-black hover:text-white  bg-red-500 rounded-md  duration-200  pointer-events-auto border-red-50 md:p-2 p-1 "
             onClick={handle}
           >
             signOut
